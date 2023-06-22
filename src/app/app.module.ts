@@ -8,6 +8,9 @@ import { CalculadoraComponent } from './pages/calculadora/calculadora.component'
 import { JogoDaVelhaComponent } from './pages/jogo-da-velha/jogo-da-velha.component';
 import { HeaderComponent } from './pages/menu/header/header.component';
 import { FooterComponent } from './pages/menu/footer/footer.component';
+import { WeatherComponent } from './pages/weather/weather.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { FooterComponent } from './pages/menu/footer/footer.component';
     CalculadoraComponent,
     JogoDaVelhaComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
