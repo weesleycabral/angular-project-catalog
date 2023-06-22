@@ -1,6 +1,8 @@
 .container-card {
+    display: flex;
     width: 50%;
     padding: 100px;
+    flex-direction: row;
 }
 
 .card:hover {
