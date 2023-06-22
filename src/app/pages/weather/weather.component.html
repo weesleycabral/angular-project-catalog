@@ -5,7 +5,8 @@
 
 <div class="container" *ngFor="let tempo of weather">
     <div class="status">
-        <div class="temp">
+      <div class="temp">
+          <span style="font-size: 1.4em; color: gray">{{ tempo.location.name }} - {{ tempo.location.region }}, {{ tempo.location.country }}</span>
             <span>{{ tempo.current.temp_c }}°</span>
         </div>
         <!----<span>{{ tempo.current.condition.text }}</span>    --> <img class="img"

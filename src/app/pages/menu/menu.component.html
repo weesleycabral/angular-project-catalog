@@ -1,5 +1,5 @@
-<div class="container-card" routerLink="/weather" *ngFor="let item of pages; let i = index">
-    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+<div class="container-card" routerLink="/weather" >
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;" *ngFor="let item of pages; let i = index">
         <div class="card-header">#{{ i + 1 }}</div>
         <div class="card-body">
             <h5 class="card-title">{{ titles[i] }}</h5>
