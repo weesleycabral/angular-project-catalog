@@ -10,8 +10,20 @@ export class MenuComponent implements OnInit {
   public titles: string[] = [];
   public descricao: string[] = [];
   public rotas: string[] = [];
+  public cards;
 
   constructor() {
+    this.cards = {
+      pages: [1, 2, 3],
+      titles: ['Clima', 'Calculadora', 'Jogo da Velha'],
+      descricao: ['Digite o nome da cidade e consiga ver detalhes sobre seu clima',
+      'Faça cálculos que nem uma calculadora normal',
+      '#'
+    ],
+    rotas: ['weather', 'calculator'],
+    available: false
+    }
+
     this.pages = [1, 2, 3];
     this.titles = ['Clima', 'Calculadora', 'Jogo da Velha'];
     this.descricao = ['Digite o nome da cidade e consiga ver detalhes sobre seu clima',
