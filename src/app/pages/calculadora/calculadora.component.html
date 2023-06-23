@@ -1,16 +1,23 @@
-<div class="container">
-    <div class="display">
+<div class="display">{{ display }}</div>
+<div class="container-buttons">
+    <div class="button button-9" (click)="addNum(7)">7</div>
+    <div class="button button-8" (click)="addNum(8)">8</div>
+    <div class="button button-7" (click)="addNum(9)">9</div>
+    <div class="button button-6" (click)="addNum(4)">4</div>
+    <div class="button button-5" (click)="addNum(5)">5</div>
+    <div class="button button-4" (click)="addNum(6)">6</div>
+    <div class="button button-3" (click)="addNum(1)">1</div>
+    <div class="button button-2" (click)="addNum(2)">2</div>
+    <div class="button button-1" (click)="addNum(3)">3</div>
+</div>
 
-    </div>
-    <div class="numbers">
-        <div class="number number-9">9</div>
-        <div class="number number-8">8</div>
-        <div class="number number-7">7</div>
-        <div class="number number-6">6</div>
-        <div class="number number-5">5</div>
-        <div class="number number-4">4</div>
-        <div class="number number-3"> 3</div>
-        <div class="number number-2">2</div>
-        <div class="number number-1">1</div>
-    </div>
+<div class="container-operators">
+    <div class="button button-m" (click)="chooseOperator('m')">X</div>
+    <div class="button button-d" (click)="chooseOperator('d')">/</div>
+    <div class="button button-a" (click)="chooseOperator('a')">+</div>
+    <div class="button button-s" (click)="chooseOperator('s')">-</div>
+</div>
+<div class="resultado">
+    <button class="equal" (click)="calculate()">=</button>
+    <button class="equal" (click)="clean()">CE</button>
 </div>
