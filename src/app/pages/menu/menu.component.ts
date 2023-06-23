@@ -14,7 +14,10 @@ export class MenuComponent implements OnInit {
   constructor() {
     this.pages = [1, 2, 3];
     this.titles = ['Clima', 'Calculadora', 'Jogo da Velha'];
-    this.descricao = ['Digite o nome da cidade e consiga ver detalhes sobre seu clima', '#', '#'];
+    this.descricao = ['Digite o nome da cidade e consiga ver detalhes sobre seu clima',
+      'Faça cálculos que nem uma calculadora normal',
+      '#'
+    ];
     this.rotas = ['weather', 'calculator'];
   }
 
