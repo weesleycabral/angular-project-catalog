@@ -11,7 +11,10 @@ export class WeatherComponent implements OnInit {
   public cidade: string = '';
   public weather: any = [];
 
-  constructor(private weatherService: WeatherapiService, private toast: ToastrService) {}
+  constructor(
+    private weatherService: WeatherapiService,
+    private toast: ToastrService
+  ) { }
 
   ngOnInit(): void {
     document.documentElement.style.height = '100%';
@@ -40,12 +43,12 @@ export class WeatherComponent implements OnInit {
   }
 
   changeBackground(is_day: number) {
-        if (is_day === 1) {
-          document.body.style.backgroundImage =
-            'linear-gradient(0deg, rgba(255,128,24,1) 0%, rgba(255,233,61,1) 59%)';
-        } else {
-          document.body.style.backgroundImage =
-            'linear-gradient(180deg, rgba(2,0,29,1) 62%, rgba(3,10,55,1) 100%)';
-        }
+    if (is_day === 1) {
+      document.body.style.backgroundImage =
+        'linear-gradient(0deg, rgba(255,128,24,1) 0%, rgba(255,233,61,1) 59%)';
+    } else {
+      document.body.style.backgroundImage =
+        'linear-gradient(180deg, rgba(2,0,29,1) 62%, rgba(3,10,55,1) 100%)';
+    }
   }
 }

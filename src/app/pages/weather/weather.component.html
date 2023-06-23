@@ -5,12 +5,12 @@
 
 <div class="container" *ngFor="let tempo of weather">
     <div class="status">
-      <div class="temp">
-          <span style="font-size: 1.4em; color: gray">{{ tempo.location.name }} - {{ tempo.location.region }}, {{ tempo.location.country }}</span>
+        <div class="temp">
+            <span style="font-size: 1.4em; color: gray">{{ tempo.location.name }} - {{ tempo.location.region }}, {{
+                tempo.location.country }}</span>
             <span>{{ tempo.current.temp_c }}°</span>
         </div>
-        <!----<span>{{ tempo.current.condition.text }}</span>    --> <img class="img"
-            src="{{ tempo.current.condition.icon }}" alt="">
+        <img class="img" src="{{ tempo.current.condition.icon }}" alt="">
     </div>
     <div class="vento">
         <span>Velocidade do vento: {{ tempo.current.wind_kph }} km/h </span>

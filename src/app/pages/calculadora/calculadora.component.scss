@@ -1,0 +1,16 @@
+.display {
+    border: 1px solid black;
+    width: 100px;
+    height: 20px;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: row;
+}
+
+.number {
+    padding-right: 10px;
+}
