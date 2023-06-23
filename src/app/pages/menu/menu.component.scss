@@ -17,3 +17,7 @@
     cursor: pointer;
     transform: scale(1.2);
 }
+
+.card-deactivated:hover {
+  cursor: not-allowed;
+}
