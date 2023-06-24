@@ -1,1 +1,5 @@
-<p>jogo-da-velha works!</p>
+<div class="table"  >
+  <div class="item" *ngFor="let square of squares; let i index" (click)="play(i)">
+    <span>{{ symbol[i] }}</span>
+  </div>
+</div>

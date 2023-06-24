@@ -30,6 +30,12 @@ export class MenuComponent implements OnInit {
       {
         name: 'Jogo da Velha',
         description: 'Jogue um jogo da velha virtual',
+        route: 'tic-tac-toe',
+        available: true
+      },
+      {
+        name: '############',
+        description: '############',
         route: '',
         available: false
       },
