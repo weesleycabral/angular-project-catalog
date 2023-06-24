@@ -16,7 +16,7 @@ export class CalculadoraComponent implements OnInit {
 
   }
 
-  addNum(num: number) {
+  addNum(num: number | string) {
     if (!this.display) {
       this.display = num.toString();
     } else {
@@ -47,6 +47,10 @@ export class CalculadoraComponent implements OnInit {
 
     this.firstValue = result;
     this.display = result?.toString();
+  }
+
+  eraseNumber() {
+    this.display = this.display.substring(0, this.display.length-1);
   }
 
   clean() {

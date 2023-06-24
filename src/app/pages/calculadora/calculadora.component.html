@@ -1,23 +1,72 @@
-<div class="display">{{ display }}</div>
-<div class="container-buttons">
-    <div class="button button-9" (click)="addNum(7)">7</div>
-    <div class="button button-8" (click)="addNum(8)">8</div>
-    <div class="button button-7" (click)="addNum(9)">9</div>
-    <div class="button button-6" (click)="addNum(4)">4</div>
-    <div class="button button-5" (click)="addNum(5)">5</div>
-    <div class="button button-4" (click)="addNum(6)">6</div>
-    <div class="button button-3" (click)="addNum(1)">1</div>
-    <div class="button button-2" (click)="addNum(2)">2</div>
-    <div class="button button-1" (click)="addNum(3)">3</div>
-</div>
+<!-- <div class="calculator">
+  <div class="display">{{ display }}</div>
+  <div class="container-buttons">
+      <div class="button button-9" (click)="addNum(7)">7</div>
+      <div class="button button-8" (click)="addNum(8)">8</div>
+      <div class="button button-7" (click)="addNum(9)">9</div>
+      <div class="button button-6" (click)="addNum(4)">4</div>
+      <div class="button button-5" (click)="addNum(5)">5</div>
+      <div class="button button-4" (click)="addNum(6)">6</div>
+      <div class="button button-3" (click)="addNum(1)">1</div>
+      <div class="button button-2" (click)="addNum(2)">2</div>
+      <div class="button button-1" (click)="addNum(3)">3</div>
+  </div>
 
-<div class="container-operators">
-    <div class="button button-m" (click)="chooseOperator('m')">X</div>
-    <div class="button button-d" (click)="chooseOperator('d')">/</div>
-    <div class="button button-a" (click)="chooseOperator('a')">+</div>
-    <div class="button button-s" (click)="chooseOperator('s')">-</div>
+  <div class="container-operators">
+      <div class="button button-m" (click)="chooseOperator('m')">X</div>
+      <div class="button button-d" (click)="chooseOperator('d')">/</div>
+      <div class="button button-a" (click)="chooseOperator('a')">+</div>
+      <div class="button button-s" (click)="chooseOperator('s')">-</div>
+  </div>
+  <div class="resultado">
+      <button class="equal" (click)="calculate()">=</button>
+      <button class="equal" (click)="clean()">CE</button>
+  </div>
 </div>
-<div class="resultado">
-    <button class="equal" (click)="calculate()">=</button>
-    <button class="equal" (click)="clean()">CE</button>
+ -->
+
+<div class="container-fluid">
+  <div class="calculator">
+    <div class="mac-buttons">
+      <div class="close">🔴</div>
+      <div class="minimize">🟡</div>
+      <div class="expand">🟢</div>
+    </div>
+    <div class="buttons">
+      <div class="display" style="margin-bottom: 0.4em">
+        {{ display }}
+      </div>
+    </div>
+    <div class="buttons" style="margin-bottom: 0.4em">
+      <div class="top-button button" style="pointer-events: none;"></div>
+      <div class="top-button button">CE</div>
+      <div class="top-button button" (click)="clean()">C</div>
+      <div class="top-button button" (click)="eraseNumber()"><</div>
+    </div>
+    <div class="buttons">
+      <div class="button" (click)="addNum(1)">1</div>
+      <div class="button" (click)="addNum(2)">2</div>
+      <div class="button" (click)="addNum(3)">3</div>
+
+      <div class="right-button button" (click)="chooseOperator('a')">+</div>
+
+      <div class="button" (click)="addNum(4)">4</div>
+      <div class="button" (click)="addNum(5)">5</div>
+      <div class="button" (click)="addNum(6)">6</div>
+
+      <div class="right-button button" (click)="chooseOperator('s')">-</div>
+
+      <div class="button" (click)="addNum(7)">7</div>
+      <div class="button" (click)="addNum(8)">8</div>
+      <div class="button" (click)="addNum(9)">9</div>
+
+      <div class="right-button button" (click)="chooseOperator('m')">*</div>
+
+      <div class="button" (click)="addNum('.')">,</div>
+      <div class="button" (click)="addNum(0)">0</div>
+      <div class="right-button button" (click)="calculate()">=</div>
+
+      <div class="right-button button" (click)="chooseOperator('d')">/</div>
+    </div>
+  </div>
 </div>
