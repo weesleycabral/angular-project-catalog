@@ -1,5 +1,48 @@
-<div class="table"  >
-  <div class="item" *ngFor="let square of squares; let i index" (click)="play(i)">
-    <span>{{ symbol[i] }}</span>
+<div class="table">
+  <div class="table" (click)="play(1)"  >
+    <div class="item" id="item-1" >
+      {{ squares[squares.length]?.posicao === 1 ? squares[squares.length]?.jogada : '' }}
+    </div>
+  </div>
+  <div class="table" (click)="play(2)"  >
+    <div class="item" id="item-2" >
+      {{ squares[squares.length]?.posicao === 2 ? squares[squares.length]?.jogada : '' }}
+    </div>
+  </div>
+  <div class="table" (click)="play(3)"  >
+    <div class="item" id="item-3" >
+      {{ squares[squares.length]?.posicao === 3 ? squares[squares.length]?.jogada : '' }}
+    </div>
+  </div>
+  <div class="table" (click)="play(4)"  >
+    <div class="item" id="item-4" >
+      {{ squares[squares.length]?.posicao === 4 ? squares[squares.length]?.jogada : '' }}
+    </div>
+  </div>
+  <div class="table" (click)="play(5)"  >
+    <div class="item" id="item-5" >
+      {{ squares[squares.length]?.posicao === 5 ? squares[squares.length]?.jogada : '' }}
+    </div>
+  </div>
+  <div class="table" (click)="play(6)" >
+    <div class="item" id="item-6" >
+      {{ squares[squares.length]?.posicao === 6 ? squares[squares.length]?.jogada : '' }}
+    </div>
+  </div>
+  <div class="table" (click)="play(7)"  >
+    <div class="item" id="item-7" >
+      {{ squares[squares.length]?.posicao === 7 ? squares[squares.length]?.jogada : '' }}
+    </div>
+  </div>
+  <div class="table" (click)="play(8)"  >
+    <div class="item" id="item-8" >
+      {{ squares[squares.length]?.posicao === 8 ? squares[squares.length]?.jogada : '' }}
+    </div>
+  </div>
+  <div class="table" (click)="play(9)"  >
+    <div class="item" id="item-9" >
+      {{ squares[squares.length]?.posicao === 9 ? squares[squares.length]?.jogada : '' }}
+    </div>
   </div>
 </div>
+
