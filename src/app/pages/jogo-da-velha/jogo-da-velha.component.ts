@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class JogoDaVelhaComponent implements OnInit {
   public squares: any = [];
   public player = 'X';
-  public symbol: string[] = [];
   public winningValues = [
     [1, 2, 3],
     [4, 5, 6],
@@ -37,6 +36,11 @@ export class JogoDaVelhaComponent implements OnInit {
     const quadrado = document.getElementById(`item-${i}`);
     quadrado!.innerHTML = this.player;
     this.player = this.player === 'X' ? 'O' : 'X';
+    // const div = document.getElementsByClassName('item');
+    // if (this.player === 'X') {
+
+    // }
+
     // this.checkWin(this.player);
   }
 
