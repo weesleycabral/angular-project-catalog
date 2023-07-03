@@ -4,7 +4,7 @@ import { Card } from './models/card.model';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent implements OnInit {
   // public pages: number[] = [];
@@ -17,30 +17,36 @@ export class MenuComponent implements OnInit {
     this.cards = [
       {
         name: 'Clima',
-        description: 'Digite o nome da cidade e consiga ver detalhes sobre seu clima',
+        description:
+          'Digite o nome da cidade e consiga ver detalhes sobre seu clima',
         route: 'weather',
-        available: true
+        available: true,
       },
       {
         name: 'Calculadora',
         description: 'Faça cálculos que nem uma calculadora normal',
         route: 'calculator',
-        available: true
+        available: true,
       },
       {
         name: 'Jogo da Velha',
         description: 'Jogue um jogo da velha virtual',
         route: 'tic-tac-toe',
-        available: true
+        available: true,
+      },
+      {
+        name: "Encurtador de URL's",
+        description: 'Encurte suas urls de um jeito fácil',
+        route: 'url-shortener',
+        available: true,
       },
       {
         name: '############',
         description: '############',
         route: '',
-        available: false
+        available: false,
       },
-
-    ]
+    ];
 
     // this.pages = [1, 2, 3];
     // this.titles = ['Clima', 'Calculadora', 'Jogo da Velha'];
@@ -51,8 +57,5 @@ export class MenuComponent implements OnInit {
     // this.rotas = ['weather', 'calculator'];
   }
 
-  ngOnInit(): void {
-
-  }
-
+  ngOnInit(): void {}
 }

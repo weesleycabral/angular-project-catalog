@@ -1,3 +1,4 @@
+import { UrlShortenerComponent } from './pages/url-shortener/url-shortener.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MenuComponent } from './pages/menu/menu.component';
@@ -9,24 +10,28 @@ const routes: Routes = [
   {
     path: '',
     component: MenuComponent,
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'weather',
-    component: WeatherComponent
+    component: WeatherComponent,
   },
   {
     path: 'calculator',
-    component: CalculadoraComponent
+    component: CalculadoraComponent,
   },
   {
     path: 'tic-tac-toe',
-    component: JogoDaVelhaComponent
-  }
+    component: JogoDaVelhaComponent,
+  },
+  {
+    path: 'url-shortener',
+    component: UrlShortenerComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
