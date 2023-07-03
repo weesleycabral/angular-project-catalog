@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UrlShortenerComponent } from './pages/url-shortener/url-shortener.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     JogoDaVelhaComponent,
     HeaderComponent,
     FooterComponent,
-    WeatherComponent
+    WeatherComponent,
+    UrlShortenerComponent
   ],
   imports: [
     BrowserModule,
